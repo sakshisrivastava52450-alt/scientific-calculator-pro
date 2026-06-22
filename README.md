@@ -22,3 +22,7 @@ This project was created to improve front-end web development skills and demonst
 
 Author:
 Shreya Srivastava
+
+there are screenshot of scientific calculator pro:
+Screenshot 2026-06-22 231749.png
+
