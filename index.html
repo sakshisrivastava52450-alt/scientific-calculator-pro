@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Scientific Calculator Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calc" role="application" aria-label="Scientific Calculator Pro">
+    <div class="display" id="display">
+      <div class="expr" id="expr"></div>
+      <div class="out" id="out">0</div>
+    </div>
+
+    <div class="row" style="margin-top:12px">
+      <button class="small" data-fn="mc">MC</button>
+      <button class="small" data-fn="mplus">M+</button>
+      <button class="small" data-fn="mminus">M-</button>
+      <button class="small" data-fn="mr">MR</button>
+      <button class="small" data-fn="ans">ANS</button>
+    </div>
+
+    <div class="row">
+      <button class="op" data-val="(">(</button>
+      <button class="op" data-val=")">)</button>
+      <button data-fn="back">⌫</button>
+      <button data-fn="clear" class="accent">C</button>
+    </div>
+
+    <div class="row">
+      <button data-val="sin(">sin</button>
+      <button data-val="cos(">cos</button>
+      <button data-val="tan(">tan</button>
+      <button data-val="^" class="op">^</button>
+    </div>
+
+    <div class="row">
+      <button data-val="7">7</button>
+      <button data-val="8">8</button>
+      <button data-val="9">9</button>
+      <button data-val="/" class="op">÷</button>
+    </div>
+
+    <div class="row">
+      <button data-val="4">4</button>
+      <button data-val="5">5</button>
+      <button data-val="6">6</button>
+      <button data-val="*" class="op">×</button>
+    </div>
+
+    <div class="row">
+      <button data-val="1">1</button>
+      <button data-val="2">2</button>
+      <button data-val="3">3</button>
+      <button data-val="-" class="op">−</button>
+    </div>
+
+    <div class="row">
+      <button data-val="0" class="wide">0</button>
+      <button data-val=".">.</button>
+      <button data-val="%" class="op">%</button>
+      <button data-val="+" class="op">+</button>
+    </div>
+
+    <div class="row">
+      <button data-val="pi">π</button>
+      <button data-val="e">e</button>
+      <button data-fn="sqrt">√</button>
+      <button data-fn="fact">n!</button>
+    </div>
+
+    <div class="row">
+      <button data-fn="ln">ln</button>
+      <button data-fn="log">log</button>
+      <button data-fn="exp">exp</button>
+      <button class="accent" id="equals">=</button>
+    </div>
+
+    <div class="footer">
+      <div class="toggle">
+        <button class="deg-btn" id="mode">DEG</button>
+        <div class="label">Mode</div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <div class="label">History</div>
+        <button class="deg-btn" id="clearHist">Clear</button>
+      </div>
+    </div>
+
+    <div class="history" id="history" aria-live="polite"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
